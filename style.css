@@ -1,0 +1,1066 @@
+* {
+  box-sizing: border-box;
+}
+
+.index {
+  display: none;
+}
+
+.menuhide {
+  height: 0;
+  display: none;
+}
+
+/*========== NAVIGATION ==========*/
+
+nav {
+  grid-area: nav;
+  top: 0;
+  float: right;
+  width: 100%;
+  background-color: #FAFAFA;
+  height: auto;
+  position: sticky;
+  z-index: 2;
+}
+
+.navback {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: #FAFAFA;
+  height: auto;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+  color: #000;
+}
+
+nav li {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  padding-top: 28px;
+  height: 80px;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0 2px;
+}
+
+nav li:hover {
+  border-bottom: 6px solid #fe576e;
+  animation: fade 0.4s;
+}
+
+
+.hidearrow {
+  color: #FFF;
+}
+
+.hambutton {
+  float: right;
+  background-color: #fafafa;
+  border: 0;
+  margin-top: 15px;
+}
+
+.hambutton:after {
+  clear: both;
+}
+
+.logo {
+  float: left;
+  height: 80px;
+  padding: 15px;
+}
+
+/*===DROPDOWN===*/
+
+.normaldrop {
+  display: none;
+  width: 205px;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 80px;
+  margin: 0;
+  background-color: #f3dce4;
+  font-size: .8rem;
+  z-index: 2;
+}
+
+.normaldrop a {
+  text-align: left;
+  display: block;
+  margin: 0;
+  padding: 20px;
+}
+
+.normaldrop a:hover {
+  text-decoration: none;
+  background-color: #fafafa;
+}
+
+nav ul li:hover .normaldrop {
+  display: block;
+  animation: fade 0.3s;
+}
+
+/*==============================*/
+
+/*========== HERO SLIDESHOW ==========*/
+
+.herohome {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  position: relative;
+  height: auto;
+
+}
+.herohome img{
+  width: 100%;
+  height: auto;
+}
+
+.heroslide {
+  display: block;
+  transition: all 0.5s;
+  animation: fade 1s;
+}
+
+.buttons {
+  grid-area: althero;
+  z-index: 1;
+  width: 100%;
+  height: 25px;
+  margin-top: 11px;
+}
+
+.circlecontainer {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+}
+
+.circle {
+  cursor: pointer;
+  color: #fff;
+  background-color: #FFF;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.circle:hover {
+  color: #fe576e;
+  background-color: #fe576e;
+  transition: all 0.5s;
+}
+
+.white {
+  color: #fe576e;
+  background-color: #fe576e;
+}
+
+.show {
+  display: block;
+  height: auto;
+}
+
+.heroblurslide {
+  display: none;
+  position: absolute;
+  animation: fromleft .8s
+}
+
+.blurhome {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  height: 800px;
+}
+
+.blurhome img {
+  height: 800px;
+  width: 100%;
+}
+/*==============================*/
+
+/*========== ALL PAGES ==========*/
+.pink{
+  /*color: #fe576e;*/
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+  grid-template-areas: ". nav ." ". hero ." "althero althero althero" "header header header" ". calendar ." ". content1 ." ". content2 ." "content3 content3 content3" ". content4 ." "content5 content5 content5" "footer footer footer"
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  /*background-image: url("images/pinkbkg.jpg");*/
+  background-color: #f3dce4;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 2rem;
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+  z-index: 1;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  margin: 50px 0;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+.header {
+  grid-area: header;
+  /*background-image: url(images/brushpink.jpg);*/
+  background-color: #FAFAfa;
+  background-size: cover;
+  /*background-color: #E7CAD4;*/
+  color: #000;
+  margin-top: auto;
+  /*border-bottom: 1px solid black;*/
+  box-shadow: 1px 1px 10px #888888;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #000;
+  color: #F3f3f3;
+}
+
+.footerlogo {
+  margin-bottom: 0px;
+  margin-right: 25px;
+}
+
+.address {
+  margin-top: 15px;
+  margin-right: 25px;
+}
+
+.address p {
+  line-height: normal;
+}
+
+.socialmediafooter {
+  float: right;
+  margin-top: 10px;
+}
+form{
+  grid-area: content1;
+  margin: 50px 0;
+}
+
+textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+select{
+  background-image: url("images/paper.png");
+  background-position: 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  padding-left: 50px;
+}
+.contact{
+  grid-template-rows: 200px;
+  padding-top: 99px;
+}
+input[type="text"], input[type="email"],input[type="tel"], input[type="submit"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+          border: 1px solid #a9a9a9;
+    }
+input[type="text"]{
+    background-image: url("images/person.png");
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+
+}
+input[type="email"]{
+    background-image: url("images/email.png");
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+input[type="tel"]{
+    background-image: url("images/phone.png");
+    background-position: 10px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+/*========== HOMEPAGE ==========*/
+
+.programs {
+  grid-area: content1;
+
+}
+
+.program {
+  justify-self: center;
+  background-color: #FAFAFA;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: inline-block;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.programlogo {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.bar1 {
+  /*grid-area: content3;*/
+  /*background-image: url(images/studentinfobkg.jpg);*/
+  grid-row: 8/9;
+  grid-column: 2/3;
+  background-size: cover;
+  background-color: #f3dce4;
+  color: #000;
+  margin-top: auto;
+}
+.lightgrey{
+
+}
+.bar2 {
+  /*grid-area: content5;*/
+  grid-row: 9/10;
+  grid-column: 2/3;
+  /*background-image: url(images/aboutbkg.jpeg);*/
+  background-size: cover;
+  color: #000;
+  margin-top: auto;
+
+}
+.bargrey{
+  grid-row: 9/10;
+  grid-column: 1/4;
+  background-color: #fafafa;
+}
+
+.programlogos a {
+  height: 200px;
+  width: 200px;
+}
+
+.enrollnow {
+  grid-area: hero;
+  display: block;
+  background-color: rgba(255, 255, 255, .1);
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 15px 45px;
+  transition: all .5s;
+  text-align: center;
+  width: auto;
+  /*font-family: 'Dancing Script', cursive;*/
+  font-weight: bold;
+  z-index: 1;
+  margin-left: -80px;
+  margin-bottom: 20px;
+}
+
+.enrollnow:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.programlogos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: -35px;
+  margin-right: -35px;
+}
+
+/*==============================*/
+
+/*========== GUEST SERVICES ==========*/
+
+.guestservices {
+  grid-area: content2;
+  background-color: #FAFAFA;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 10px #888888;
+  margin-top: 50px;
+  /*ox-shadow: 3px 3px 10px #888888;*/
+}
+.guestservicescolor{
+  grid-row: 7/8;
+  grid-column: 1/4;
+  background-color: #f3f3f3;
+
+}
+.gsleft {
+  float: left;
+}
+
+.gsright {
+  float: right;
+}
+
+.gsleft table {
+  margin-left: 50px;
+  border-collapse: separate;
+  border-spacing: 50px 25px;
+}
+
+.gsright table {
+  margin-right: 50px;
+  border-collapse: separate;
+  border-spacing: 50px 25px;
+}
+
+.gsleft th, .gsright th {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.gsleft td, .gsright td {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.gsleft td:nth-of-type(1), .gsright td:nth-of-type(1) {
+  min-width: 225px;
+}
+
+.title {
+  margin: 25px;
+}
+
+.extramargintop {
+  margin-top: 50px;
+}
+
+/*==============================*/
+
+/*========== PROGRAM PAGES ==========*/
+
+.program_about {
+  grid-area: content1;
+}
+
+.program_about h3 {
+  margin: 40px;
+}
+
+.program_req_left h4 {
+  margin: 20px;
+}
+
+.program_req_right h4 {
+  text-align: left;
+  margin: 20px;
+}
+
+.program_requirements {
+  grid-area: content2;
+  margin-bottom: 40px;
+}
+
+.program_req_left {
+  float: left;
+  padding: 0 40px 0 0;
+  width: 75%;
+}
+
+.program_req_right {
+  float: right;
+  padding: 0 0 0 40px;
+  width: 25%;
+}
+
+.program_req_right ul {
+  padding-left: 20px;
+  line-height: 2rem;
+  margin-top: 0px;
+}
+
+.program_block {
+  padding: 350px 0;
+}
+
+.program_block h1 {
+  font-size: 10rem;
+}
+
+.program_block h1:hover {
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.program_allblocks {
+  grid-area: content3;
+  width: 100%;
+}
+
+.program_block_cosmotology {
+  background-image: url("images/img_program_cosmetology.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.program_block_barbering {
+  background-image: url("images/img_program_barbering.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFF;
+}
+
+.program_block_mkartistry {
+  background-image: url("images/img_program_mkartistry.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #FFF;
+}
+
+.program_block_esthetics {
+  background-image: url("images/img_program_esthetics.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*==============================*/
+
+/*========== HERO IMAGES ==========*/
+
+.home{
+
+}
+
+.hero_guestservices {
+  grid-area: althero;
+  height: 600px;
+  background-image: url("images/hero_guestservices.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero_studentinfo {
+  grid-area: althero;
+  height: 600px;
+  background-image: url("images/hero_studentinfo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero_locations {
+  grid-area: althero;
+  height: 600px;
+  background-image: url("images/hero_locations.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.hero_finaid {
+  grid-area: althero;
+  height: 600px;
+  background-image: url("images/hero_finaid.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero_cosmotology {
+  grid-area: althero;
+  height: 600px;
+  background-image: url("images/cosmetology.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero_barbering {
+  grid-area: althero;
+  height: 600px;
+  background-image: url("images/img_program_barbering.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero_mkartistry {
+  grid-area: althero;
+  height: 600px;
+  background-image: url("images/img_program_mkartistry.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero_esthetics {
+  grid-area: althero;
+  height: 600px;
+  background-image: url("images/img_program_esthetics.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.hero_aboutus {
+  grid-area: althero;
+  height: 600px;
+  background-image: url("images/aboutus.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+/*==============================*/
+
+/*========== STUDENT INFRORMATION PAGES ==========*/
+
+.calendar{
+  grid-area: calendar;
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 750px;
+  margin: 40px 0;
+}
+
+.calendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#smallcalendar{
+  padding-bottom: 400px;
+}
+.si_scholarship {
+  grid-area: content1;
+}
+
+.si_scholarship h2 {
+  margin: 40px 0;
+}
+
+.si_finaid {
+  grid-area: content2;
+  margin-bottom: 40px;
+}
+
+.si {
+  grid-area: content1;
+  margin: 40px 0;
+}
+
+.si h2 {
+  margin-top: 0;
+  margin: 25px;
+}
+
+.learnmore {
+  display: block;
+  margin: 40px auto;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-size: 2rem;
+  padding: 15px 45px;
+  transition: all .5s;
+  text-align: center;
+  width: auto;
+  font-family: 'Dancing Script', cursive;
+}
+
+.learnmore:hover {
+  background-color: #fe576e;
+  color: #FFF;
+  border: 1px solid #fe576e;
+}
+
+/*==============================*/
+
+/*========== ABOUT US ==========*/
+.about_paragraph{
+  grid-area: content1;
+}
+.about_locations{
+  grid-area: content2;
+}
+.locations {
+  grid-area: content3;
+}
+
+.location1 {
+  color: #FFF;
+  background-image: url("images/location_slc.jpg");
+  background-position: bottom;
+  background-size: cover;
+  filter: grayscale(1);
+  transition: all .5s;
+}
+
+.location2 {
+  color: #FFF;
+  background-image: url("images/location_ogden.jpg");
+  background-position: bottom;
+  background-size: cover;
+  filter: grayscale(1);
+  transition: all .5s;
+}
+
+.location3 {
+  color: #FFF;
+  background-image: url("images/location_westjordan.jpg");
+  background-position: bottom;
+  background-size: cover;
+  filter: grayscale(1);
+  transition: all .5s;
+}
+
+.location4 {
+  color: #FFF;
+  background-image: url("images/location_provo.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  transition: all .5s;
+}
+
+.location1:hover {
+  filter: grayscale(0);
+}
+
+.location2:hover {
+  filter: grayscale(0);
+}
+
+.location3:hover {
+  filter: grayscale(0);
+}
+
+.location4:hover {
+  filter: grayscale(0);
+}
+
+.locations h2 {
+  padding: 40px 0 20px 0;
+  margin: 0;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+.locations h3 {
+  padding: 20px 0 40px 0;
+  margin: 0;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+.locations img {
+  float: left;
+  height: 203px;
+}
+
+.gallerygrid {
+  grid-area: content3;
+  padding: 0 10px;
+}
+
+.gallerycolumn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.gallerycolumn img {
+  margin-top: 12px;
+  width: 100%;
+  height: auto;
+  transition: all 0.1s;
+}
+
+.gallerycolumn img:hover {
+  transform: scale(1.1);
+}
+
+.galleryrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*============================*/
+
+/*========== ANIMATIONS ==========*/
+
+@keyframes fromleft {
+  from {
+    left: 1000px;
+  }
+  to {
+    left: 0
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*========================*/
+
+@media only screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 100%;
+    grid-template-areas: "nav" "hero" "althero" "header" "calendar" "content1" "content2" "content3" "content4" "content5" "content6" "footer"
+  }
+  .programlogos {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+  .program {
+    margin-left: 0;
+    margin: 0;
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 1px solid #0f0f0f;
+  }
+  .programlogo {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  .gsleft {
+    float: none;
+  }
+  .gsleft td:nth-of-type(1), .gsright td:nth-of-type(1) {}
+  .gsleft table {
+    border-spacing: 5px 25px;
+    margin: auto;
+  }
+  .gsright {
+    float: none;
+  }
+  .gsright table {
+    border-spacing: 5px 25px;
+    margin: auto;
+  }
+  .herohome img {
+    width: 100%;
+  }
+  .blurhome {
+    display: none;
+  }
+  .circlecontainer {
+    height: 0px;
+    display: none;
+  }
+  .buttons {
+    height: 0px;
+    display: none;
+  }
+  .herohome {
+    display: none;
+  }
+  .guestservices h2 {
+    margin: 0;
+    font-size: 3.2rem;
+  }
+  .guestservices {
+    margin: 0;
+    padding-top: 25px;
+    box-shadow: none;
+  }
+  .nav{
+    border-bottom: 1px solid #000;
+    z-index: 2;
+  }
+  nav ul {
+    margin-top: 0;
+    padding-top: 80px;
+    z-index: 2;
+  }
+  nav li {
+    padding: 10px 0;
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    height: auto;
+    z-index: 2;
+  }
+  .bar1 h1 {
+    font-size: 2.5rem;
+  }
+  .logo {
+    padding-left: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+    max-width: 45%;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .address {
+    margin-left: 15px;
+  }
+  .program_req_left {
+    width: 100%;
+    float: none;
+    padding: 0 10px;
+  }
+  .program_req_right {
+    width: 100%;
+    float: none;
+    padding: 0 10px;
+  }
+  .program_about {
+    margin-bottom: 0px;
+  }
+  .program_req_right ul {
+    line-height: 4rem;
+    margin-top: 0px;
+  }
+  .program_block {
+    padding: 0px;
+  }
+  .program_block h1 {
+    font-size: 3rem;
+  }
+  .program_block h1:hover {
+  }
+  .hero_studentinfo {
+    height: auto;
+  }
+  .gallerycolumn {
+    width: 100%;
+  }
+  .calendar{
+    padding-bottom: 400px;
+  }
+  .mobiledrop a{
+    display: block;
+    margin-left: 20px;
+    font-size: .8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation: fade 0.5s;
+  }
+  .mob_button{
+    background-color: #fffaff;
+    border: 0;
+  }
+  #hammenu li{
+    padding-bottom: 10px;
+    padding-left: 25px;
+    background-color: #fffaff;
+    transition: all 0.3s;
+  }
+  #hammenu{
+  }
+  nav li:hover {
+    border-bottom: 0px solid #fe576e;
+    animation: fade 0.4s;
+  }
+  .header{
+    border-bottom: 1px solid #000;
+  }
+  .address{
+    display: none;
+  }
+  .bargrey{
+    grid-area: content5;
+  }
+  .bar1{
+    grid-area: content4;
+  }
+  .bar2{
+    grid-area: content5;
+  }
+}

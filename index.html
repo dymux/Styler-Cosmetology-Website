@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <script src="jquery-3.2.1.min.js"></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="navback"></div>
+    <nav>
+
+      <div class="desktop">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <ul>
+          <li>
+            <a href="programs.html">Programs &#10095;</a>
+            <div class="normaldrop">
+              <a href="program_cosmetology.html">Cosmetology</a>
+              <a href="program_barbering.html">Barbering</a>
+              <a href="program_mkartistry.html">Makeup Artistry</a>
+              <a href="program_esthetics.html">Esthetics</a>
+            </div>
+          </li>
+          <li><a href="guestservices.html">Guest Services <span class="hidearrow">&#10095;</span></a></li>
+          <li><a href="studentinfo.html">Student Info &#10095;</a>
+            <div class="normaldrop">
+              <a href="si_finaid.html">Financial Aid</a>
+              <a href="si_calendar.html">Calendar</a>
+            </div>
+          </li>
+          <li><a href="aboutus.html">About Us &#10095;</a>
+            <div class="normaldrop">
+              <a href="about_locations.html">Locations</a>
+              <a href="about_gallery.html">Gallery</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <button onclick="toggleHammenu()" class="hambutton"><img src="images/ham.png" alt="dropdown" class="hammenu"></button>
+        <ul id="hammenu" class="menuhide">
+          <li>
+            <a href="programs.html">Programs</a><button onclick="toggleProgram()" class="mob_button">&#10095;</button>
+            <div id="mob_program" class=" mobiledrop menuhide">
+              <a href="program_cosmetology.html">Cosmetology</a>
+              <a href="program_barbering.html">Barbering</a>
+              <a href="program_mkartistry.html">Makeup Artistry</a>
+              <a href="program_esthetics.html">Esthetics</a>
+            </div>
+          </li>
+          <li><a href="guestservices.html">Guest Services</a></li>
+          <li><a href="studentinfo.html">Student Info</a><button onclick="toggleSi()" class="mob_button">&#10095;</button>
+            <div id="mob_si" class="mobiledrop menuhide">
+              <a href="si_finaid.html">Financial Aid</a>
+              <a href="si_calendar.html">Calendar</a>
+              </div>
+          </li>
+          <li><a href="aboutus.html">About Us</a><button onclick="toggleAbout()" class="mob_button">&#10095;</button>
+            <div id="mob_about" class="mobiledrop menuhide">
+              <a href="about_locations.html">Locations</a>
+              <a href="about_gallery.html">Gallery</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="herohome">
+    <a href="enroll.html"><img src="images/fullpink.jpg" alt="PinkGirl" class="heroslide"></a>
+    <a href="programs.html"><img src="images/fullorange.jpg" alt="OrangeGirl" class="heroslide"></a>
+    <a href="enroll.html"><img src="images/fullyellow.jpg" alt="YellowGirl" class="heroslide"></a>
+    </div>
+    <div class="buttons">
+<div class="circlecontainer">
+      <span class="dots circle" onclick="currentDiv(1)"></span>
+      <span class="dots circle" onclick="currentDiv(2)"></span>
+      <span class="dots circle" onclick="currentDiv(3)"></span>
+      </div>
+
+    </div>
+    <div class="header">
+      <h1>Beauty is Passion</h1>
+    </div>
+
+    <div class="programs">
+      <div class="programlogos">
+        <div class="program"><a href="program_cosmetology.html"><img src="images/cosmotology.png" alt="Cosmetology" class="programlogo">
+          <h3>Cosmetology</h3></a></div>
+        <div class="program"><a href="program_barbering.html"><img src="images/barbering.png" alt="Barbering" class="programlogo">
+          <span class="pink"><h3>Barbering</h3></span></a></div>
+        <div class="program"><a href="program_makeupartistry.html"><img src="images/makeupartistry.png" alt="Makeup Artistry" class="programlogo">
+          <h4>Makeup-Artistry</h4></a></div>
+        <div class="program"><a href="program_esthetics.html"><img src="images/esthetics.png" alt="Estheitcs" class="programlogo">
+          <h3>Esthetics</h3></a></div>
+      </div>
+    </div>
+    <div class="guestservicescolor"></div>
+    <div class="guestservices .animation_elements">
+      <h2 class="title">Guest Services</h2>
+      <div class="gsleft">
+        <table>
+          <tr>
+            <th colspan="2"><span class="pink">Cuts</span></th>
+          </tr>
+          <tr>
+            <td>
+              Child Haircut
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>
+              Adult Haircut
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>
+              Bang Trim
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>
+              Beard and Neck Trim
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>
+              Flat Top
+            </td>
+            <td>10</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th colspan="2">Style</th>
+          </tr>
+          <tr>
+            <td>
+              Shampoo Style
+            </td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>
+              Shampoo/Up Style
+            </td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>
+              Full Perm
+            </td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>
+              Basic Flat Iron
+            </td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>
+              Hair Wrapping
+            </td>
+            <td>15</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th colspan="2">Color</th>
+          </tr>
+          <tr>
+            <td>
+              New Color
+            </td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>
+              Color Touch Up
+            </td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>
+              Highlights
+            </td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>
+              Color corection
+            </td>
+            <td>25</td>
+          </tr>
+        </table>
+      </div>
+
+
+      <div class="gsright">
+        <table>
+          <tr>
+            <th colspan="2">Nail</th>
+          </tr>
+          <tr>
+            <td>
+              Manicure
+            </td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>
+              Pedicure
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>
+              Polish
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>
+              NailArt
+            </td>
+            <td>8</td>
+          </tr>
+
+        </table>
+        <table>
+          <tr>
+            <th colspan="2">Hair Removal</th>
+          </tr>
+          <tr>
+            <td>
+              Full Face Wax
+            </td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>
+              Eybrow Wax
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>
+              Nose Wax
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>
+              Lip Wax
+            </td>
+            <td>10</td>
+          </tr>
+
+        </table>
+        <table>
+          <tr>
+            <th colspan="2">Cosmetics</th>
+          </tr>
+          <tr>
+            <td>
+              Makeup Application
+            </td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>
+              Eyelash Application
+            </td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>
+              Eyelash Extensions
+            </td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>
+              Eyebrow Tinting
+            </td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>
+              Hand repair
+            </td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>
+              Oil control
+            </td>
+            <td>20</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="bar1 animation_element" >
+      <div class="si_scholarship lightgrey">
+        <h2>Scholarships</h2>
+        <p>We are proud to offer scholarships to support the careers of our future students. Our Financial Aid Office is here to assist Students in finding scholarships that they can qualify for. There are many oppurtunities if students are dreaming of cosmetology
+          school but can't afford it. Our school offers many different scholarships, all you need to do is apply and get money to help you get through school and start your dream career. If you are still in highschool and are thinking about applying for cosmetology school you can sign up for our Hish School scholarship program. If you are not in highschool you can take the FAFSA to see if you qualify for federal student aid.</p>
+      </div>
+      <div class="si_finaid">
+        <h2>Financial Aid</h2>
+        <p>Students who are interested in applying in our school, but don't think that they can afford it, can complete their FAFSA application to see if they are elligable for a Federal scholarship. If you need help signing up, or have any questions about any of the scholarships that we offer, please contact our admissions office by calling or texting 801-559-8946. One of our admissions experts will be happy to walk you through the process.</p>
+        <a href="si_finaid.html"><button class="learnmore">Learn More</button></a>
+      </div>
+    </div>
+    <div class="bargrey"></div>
+    <div class="bar2 animation_element">
+      <div class="about_paragraph">
+        <h2>Who we are</h2>
+        <p>Founded in 2001, Styler Cosmetology is dedicated to provide the nessesary skills to follow a successful career in cosmetology at an affordable cost. We provide one-on-one assistance to every one of our students to ensure that they are getting everything that they desire from their education.</p>
+      </div>
+      <a href="about_locations.html"><button class="learnmore">Locations</button></a>
+    </div>
+    <footer>
+      <a href="http://twitter.com" target="_blank"><img src="images/twitterwhite.png" alt="twitter" class="socialmediafooter"></a>
+      <a href="http://instagram.com" target="_blank"><img src="images/instagramwhite.png" alt="instagram" class="socialmediafooter"></a>
+      <a href="http://facebook.com" target="_blank"><img src="images/facebookwhite.png" alt="facebook" class="socialmediafooter"></a>
+      <a href="index.html"><img src="images/logowhite.png" alt="logo" class="logo footerlogo"></a>
+      <div class="address">
+        <p>540 New Dr.</p>
+        <p>Oxnard, CA 93035<p>
+        <p>805-815-7417</p>
+      </div>
+
+
+
+
+
+    </footer>
+  </div>
+  <script src="MyScript.js"></script>
+</body>
+
+</html>

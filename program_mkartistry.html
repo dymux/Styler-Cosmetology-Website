@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="navback"></div>
+    <nav>
+
+      <div class="desktop">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <ul>
+          <li>
+            <a href="programs.html">Programs &#10095;</a>
+            <div class="normaldrop">
+              <a href="program_cosmetology.html">Cosmetology</a>
+              <a href="program_barbering.html">Barbering</a>
+              <a href="program_mkartistry.html">Makeup Artistry</a>
+              <a href="program_esthetics.html">Esthetics</a>
+            </div>
+          </li>
+          <li><a href="guestservices.html">Guest Services <span class="hidearrow">&#10095;</span></a></li>
+          <li><a href="studentinfo.html">Student Info &#10095;</a>
+            <div class="normaldrop">
+              <a href="si_finaid.html">Financial Aid</a>
+              <a href="si_calendar.html">Calendar</a>
+            </div>
+          </li>
+          <li><a href="aboutus.html">About Us &#10095;</a>
+            <div class="normaldrop">
+              <a href="about_locations.html">Locations</a>
+              <a href="about_gallery.html">Gallery</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <button onclick="toggleHammenu()" class="hambutton"><img src="images/ham.png" alt="dropdown" class="hammenu"></button>
+        <ul id="hammenu" class="menuhide">
+          <li>
+            <a href="programs.html">Programs</a><button onclick="toggleProgram()" class="mob_button">&#10095;</button>
+            <div id="mob_program" class=" mobiledrop menuhide">
+              <a href="program_cosmetology.html">Cosmetology</a>
+              <a href="program_barbering.html">Barbering</a>
+              <a href="program_mkartistry.html">Makeup Artistry</a>
+              <a href="program_esthetics.html">Esthetics</a>
+            </div>
+          </li>
+          <li><a href="guestservices.html">Guest Services</a></li>
+          <li><a href="studentinfo.html">Student Info</a><button onclick="toggleSi()" class="mob_button">&#10095;</button>
+            <div id="mob_si" class="mobiledrop menuhide">
+              <a href="si_finaid.html">Financial Aid</a>
+              <a href="si_calendar.html">Calendar</a>
+              </div>
+          </li>
+          <li><a href="aboutus.html">About Us</a><button onclick="toggleAbout()" class="mob_button">&#10095;</button>
+            <div id="mob_about" class="mobiledrop menuhide">
+              <a href="about_locations.html">Locations</a>
+              <a href="about_gallery.html">Gallery</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero_mkartistry desktop"></div>
+
+
+    <div class="header">
+      <h1>Makeup-Artistry</h1>
+    </div>
+    <div class="program_about">
+      <h3>Why Makeup-artistry?</h3>
+      <p>As a makeup artist, you'll use cosmetics to cover up flaws, bring out color, and enhance a persons natural beauty. In our program you'll specialize in the application of different cosmetic products, everything from casual makeup application to professional theatrical or special effects makeup for film. We'll teach you the practical side as well as the buisiness side of makeup artistry, by the end of our program you will know how to network and advertise your services. </p>
+    </div>
+    <div class="program_requirements">
+      <div class="program_req_left">
+        <h4>Requirements</h4> <p>In Utah there are no special licences specificaly for makeup artists, instead makeup artists must  become licenced in cosmetology by the Utah Division of Occupational and Professional Licencing before being able to offer any makeup services. Our makeup artistry program is designed to be taken as a supplement to a cosmetology program and should be taken after obtaining a cosmetology licence. This program is highly reccommended for anybody looking at going into makeup services.</p>
+        <h4>How to join</h4>
+        <p>Click below to schedule an appointment with one of our admissions representatives and we'll walk you through everything you need to know about our programs, requirements, and career opportunities.</p>
+      </div>
+      <div class="program_req_right">
+        <h4>Careers</h4>
+        <ul>
+          <li>Salon Makeup Specialist</li>
+          <li>Bridal Boutique Makeup artist</li>
+          <li>Special Effects Artist</li>
+          <li>Theatre Makeup Artist</li>
+          <li>Mortuary Worker</li>
+          <li>Freelancer</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <a href="http://twitter.com" target="_blank"><img src="images/twitterwhite.png" alt="twitter" class="socialmediafooter"></a>
+      <a href="http://instagram.com" target="_blank"><img src="images/instagramwhite.png" alt="instagram" class="socialmediafooter"></a>
+      <a href="http://facebook.com" target="_blank"><img src="images/facebookwhite.png" alt="facebook" class="socialmediafooter"></a>
+      <a href="index.html"><img src="images/logowhite.png" alt="logo" class="logo footerlogo"></a>
+      <div class="address">
+        <p>540 New Dr.</p>
+        <p>Oxnard, CA 93035</p>
+        <p>805-815-7417</p>
+      </div>
+    </footer>
+  </div>
+  <script src="MyScript.js"></script>
+</body>
+
+</html>

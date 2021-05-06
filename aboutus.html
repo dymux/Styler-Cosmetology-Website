@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="navback"></div>
+    <nav>
+
+      <div class="desktop">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <ul>
+          <li>
+            <a href="programs.html">Programs &#10095;</a>
+            <div class="normaldrop">
+              <a href="program_cosmetology.html">Cosmetology</a>
+              <a href="program_barbering.html">Barbering</a>
+              <a href="program_mkartistry.html">Makeup Artistry</a>
+              <a href="program_esthetics.html">Esthetics</a>
+            </div>
+          </li>
+          <li><a href="guestservices.html">Guest Services <span class="hidearrow">&#10095;</span></a></li>
+          <li><a href="studentinfo.html">Student Info &#10095;</a>
+            <div class="normaldrop">
+              <a href="si_finaid.html">Financial Aid</a>
+              <a href="si_calendar.html">Calendar</a>
+            </div>
+          </li>
+          <li><a href="aboutus.html">About Us &#10095;</a>
+            <div class="normaldrop">
+              <a href="about_locations.html">Locations</a>
+              <a href="about_gallery.html">Gallery</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile">
+        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <button onclick="toggleHammenu()" class="hambutton"><img src="images/ham.png" alt="dropdown" class="hammenu"></button>
+        <ul id="hammenu" class="menuhide">
+          <li>
+            <a href="programs.html">Programs</a><button onclick="toggleProgram()" class="mob_button">&#10095;</button>
+            <div id="mob_program" class=" mobiledrop menuhide">
+              <a href="program_cosmetology.html">Cosmetology</a>
+              <a href="program_barbering.html">Barbering</a>
+              <a href="program_mkartistry.html">Makeup Artistry</a>
+              <a href="program_esthetics.html">Esthetics</a>
+            </div>
+          </li>
+          <li><a href="guestservices.html">Guest Services</a></li>
+          <li><a href="studentinfo.html">Student Info</a><button onclick="toggleSi()" class="mob_button">&#10095;</button>
+            <div id="mob_si" class="mobiledrop menuhide">
+              <a href="si_finaid.html">Financial Aid</a>
+              <a href="si_calendar.html">Calendar</a>
+              </div>
+          </li>
+          <li><a href="aboutus.html">About Us</a><button onclick="toggleAbout()" class="mob_button">&#10095;</button>
+            <div id="mob_about" class="mobiledrop menuhide">
+              <a href="about_locations.html">Locations</a>
+              <a href="about_gallery.html">Gallery</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero_aboutus desktop"></div>
+    <div class="header">
+      <h1>About Us</h1>
+    </div>
+    <div class="about_paragraph">
+      <h2>Who we are</h2>
+      <p>Founded in 2001, Styler Cosmetology is dedicated to provide the nessesary skills to follow a successful career in cosmetology at an affordable cost. We provide one-on-one assistance to every one of our students to ensure that they are getting everything that they desire from their education.</p>
+    </div>
+    <div class="about_locations">
+      <h2>Locations</h2>
+      <h3>Salt Lake City</h3><h4>451 South State Street, Room 304</h4>
+      <h3>Ogden</h3><h4>2549 Washington Blvd, Suite 320 | Ogden, Utah 84401</h4>
+      <h3>West Jordan </h3><h4>8000 S. Redwood RoadWest Jordan, UT 84088</h4>
+      <h3>Provo</h3><h4>1200 Towne Center Blvd Provo, UT 84601</h4>
+</div>
+
+    <footer>
+      <a href="http://twitter.com" target="_blank"><img src="images/twitterwhite.png" alt="twitter" class="socialmediafooter"></a>
+      <a href="http://instagram.com" target="_blank"><img src="images/instagramwhite.png" alt="instagram" class="socialmediafooter"></a>
+      <a href="http://facebook.com" target="_blank"><img src="images/facebookwhite.png" alt="facebook" class="socialmediafooter"></a>
+      <a href="index.html"><img src="images/logowhite.png" alt="logo" class="logo footerlogo"></a>
+      <div class="address">
+        <p>540 New Dr.</p>
+        <p>Oxnard, CA 93035</p>
+        <p>805-815-7417</p>
+      </div>
+    </footer>
+  </div>
+  <script src="MyScript.js"></script>
+</body>
+
+</html>
